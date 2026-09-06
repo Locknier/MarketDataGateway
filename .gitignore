@@ -1,0 +1,17 @@
+# Logs & Builds
+build/
+cmake-build-*/
+GatewayApp
+
+# Protobuf auto-generated
+src/*.pb.h
+src/*.pb.cc
+proto/*_pb2.py
+
+# IDEs
+.idea/
+.vscode/
+
+# Ignore Python specific files
+__pycache__/
+*.pyc

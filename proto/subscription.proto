@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package market;
+
+// 控制面指令：客戶端發送的訂閱請求
+message SubscribeRequest {
+    // 訂閱的類型
+    enum Operation {
+        SUBSCRIBE = 0;   // 訂閱
+        UNSUBSCRIBE = 1; // 退訂
+    }
+    
+    Operation op_type = 1;
+    
+    // 客戶端想訂閱/退訂的股票代碼列表，例如 ["AAPL", "TSLA"]
+    repeated string tickers = 2; 
+
+    // 用戶 ID，用於權限校驗或統計
+    string client_id = 3; 
+}
+
+// 伺服器回覆的訂閱結果
+message SubscribeResponse {
+    bool success = 1;
+    string message = 2;
+}
