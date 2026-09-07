@@ -21,7 +21,7 @@ def main():
     # 构造 Protobuf 订阅请求
     req = subscription_pb2.SubscribeRequest()
     req.op_type = subscription_pb2.SubscribeRequest.SUBSCRIBE
-    req.tickers.append("AAPL")
+    req.tickers.append("ag2412")
     req.client_id = "User_XYZ_999"
     
     # 获取序列化字节流

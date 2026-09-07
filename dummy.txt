@@ -1,0 +1,7 @@
+User understands the trading hours issue and wants to know what to do next.
+Since the MarketDataGateway is effectively complete (with real CTP code built-in), it's a huge milestone.
+Next steps for their overall goal (HFT ecosystem portfolio):
+1. Code cleanup and documentation for MarketDataGateway (maybe update README again to highlight the actual CTP integration we just did).
+2. The UI client! Earlier I suggested building a C++ Qt QML client (MarketDataTerminal) that connects to MarketDataGateway via Protobuf TCP. That would be the crown jewel to visualize the whole ecosystem.
+3. Or they can move on to TradeRoutingProxy and integrate CTP Trader API similarly, but wait, Trader API requires much more boilerplate. Front-end UI is much more visually impressive.
+Let's suggest the Qt QML Terminal.
